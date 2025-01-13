@@ -10,8 +10,9 @@ export default function About() {
         <div className="flex flex-col sm:flex-row items-center sm:space-x-4 text-sm sm:text-left text-center">
           <div className="text-lg font-bold">John Rave Mimay</div>
 
-          <Separator orientation="vertical" className="h-4 sm:h-4 bg-gray-300 dark:bg-gray-700" />
-          
+         <Separator orientation="vertical" className="h-4 bg-gray-300 dark:bg-gray-700 hidden sm:block" />
+
+
           <div className="text-sm font-medium text-gray-600 dark:text-gray-300">Aspiring Software Engineer</div>
         </div>
       </header>

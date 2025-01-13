@@ -49,7 +49,7 @@ export default function Certificates() {
         <ul className="list-none h-full w-full pt-5 flex flex-wrap gap-1 justify-center mb-5 sm:mb-8">
           {cert.map((val, index) => {
             return (
-              <li key={index} className="w-full sm:w-80 lg:w-96 p-3 bg-white shadow-sm mx-2 border rounded-sm flex flex-col mb-4 dark:bg-[#1A1A1A]">
+              <li key={index} className="w-96 sm:w-80 lg:w-96 p-3 bg-white shadow-sm  border rounded-sm flex flex-col mb-1 dark:bg-[#1A1A1A]">
                 <div className="list-item w-full">
                   <div className="title">
                     <h3 className='font-semibold text-sm dark:text-white'>{val.title}</h3>

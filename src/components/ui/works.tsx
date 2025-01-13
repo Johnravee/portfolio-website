@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+
 import { PiStackSimpleFill } from "react-icons/pi";
 import { IoMdMore } from "react-icons/io";
 import { FaYoutube } from "react-icons/fa6";
@@ -26,7 +26,6 @@ import {
 import Allprojects from './all-projects';
 export default function Works() {
 
-      const [mounted, setMounted] = useState(false);
     
    
 
@@ -49,8 +48,8 @@ export default function Works() {
             img: '',
             techs: ['Visual Basic', 'MySQL'],
             url: {
-                youtubeUrl: '',
-                githubUrl: ''
+                youtubeUrl: 'https://www.youtube.com/watch?v=Dej6b8WLk_Q&t=6s',
+                githubUrl: 'https://github.com/Johnravee/ICS_SCHEDULING_SYSTEM'
             }
         },
         {
@@ -59,18 +58,14 @@ export default function Works() {
             img: '',
             techs: ['React', 'MySQL', 'Node.js', 'Jwt'],
             url: {
-                youtubeUrl: '',
-                githubUrl: ''
+                youtubeUrl: 'https://www.youtube.com/watch?v=CMpk7UCZvzo&t=9s',
+                githubUrl: 'https://github.com/Johnravee/Inventory-sys'
             }
         }
     ];
 
 
-       useEffect(() => {
-            setMounted(true);
-        }, []);
-
-     if (!mounted) return null;
+     
 
   return (
     <div>
@@ -130,8 +125,8 @@ export default function Works() {
                 </div>
                 <div className="cert-link flex justify-end items-center">
                     <div className="flex gap-2">
-                        <Link href="" ><FaYoutube size={18} className='text-red-600' /></Link>
-                        <Link href=""><FaGithub size={18} className='dark:text-white' /></Link>
+                        <Link href={val.url.youtubeUrl} ><FaYoutube size={18} className='text-red-600' /></Link>
+                        <Link href={val.url.githubUrl}><FaGithub size={18} className='dark:text-white' /></Link>
                     </div>
                 </div>
             </li>

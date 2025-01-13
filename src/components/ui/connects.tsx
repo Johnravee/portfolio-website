@@ -39,7 +39,7 @@ export default function Connects() {
             <ul className="list-none h-full w-full pt-2 flex flex-col gap-1 items-center sm:items-start sm:flex-wrap sm:flex-row sm:gap-1 sm:w-full">
                 {blogs.map((val, index) => {
                     return (
-                        <li key={index} className="w-full sm:w-80 lg:w-96 p-3 sm:m-2 m-1 bg-white shadow-sm border rounded-sm dark:bg-[#1A1A1A]">
+                        <li key={index} className="w-96 sm:w-80 lg:w-96 p-3  mb-1 sm:m-2  bg-white shadow-sm border rounded-sm dark:bg-[#1A1A1A]">
                             <div className="list-item w-full">
                                 <div className="title">
                                     <h3 className='font-semibold text-sm dark:text-white'>{val.title}</h3>
