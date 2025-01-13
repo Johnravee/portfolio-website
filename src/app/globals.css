@@ -34,6 +34,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -62,10 +63,29 @@ body {
   }
 }
 
+
+.cert-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: padding-right 0.3s ease;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.cert-link:hover .arrow {
+  transform: translateX(3px);
+}
+
+
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
