@@ -73,6 +73,8 @@ export default function Allprojects() {
                         src={val.imgUrl} 
                         alt={`Project Image ${val.title}`} 
                         className="w-full h-full object-contain" 
+                        width={500}
+                        height={500}
                         />
                     </Link>
                     <div className="flex p-5">
