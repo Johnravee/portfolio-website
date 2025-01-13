@@ -29,6 +29,13 @@ export default function Certificates() {
       provider: 'SkillUp',
       url: "https://simpli-web.app.link/e/9kMvqeXd7Pb"
     }
+    ,
+
+    {
+      title: 'Introduction to SQL',
+      provider: 'SkillUp',
+      url: "https://simpli-web.app.link/e/dgIWYiBU7Pb"
+    }
   ];
 
   return (
