@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import { LiaBlogSolid } from "react-icons/lia";
 import Link from 'next/link'; 
 import { MdOutlineEmail } from "react-icons/md";
@@ -10,7 +10,7 @@ export default function Connects() {
         url: string
     }
 
-    const [blogs, setBlog] = useState<Blogs[]>([
+    const blogs :Blogs[] =[
         {
             title: "How reduce",
             platform: "medium",
@@ -26,7 +26,7 @@ export default function Connects() {
             platform: "medium",
             url: "https://medium.com/@johnravemimayn/different-types-of-websites-79aec63f6c3d"
         }
-    ])
+    ];
 
   return (
     <div>

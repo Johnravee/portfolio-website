@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import { AiFillExperiment } from "react-icons/ai";
 import { Badge } from "@/components/ui/badge";
 export default function TechStacks() {
@@ -7,12 +7,12 @@ export default function TechStacks() {
         title: string[]
     }
 
-    const [stacks , setStacks] = useState<Stacks>(
+    const stacks : Stacks = 
         {
             title: ['Nodejs', 'React', 'Express.js', 'Next.js', 'Php', 'Laravel', 'MySQL', 'MongoDB', 'Tailwind', 'Bootstrap']
         }
        
-    )
+    
 
   return (
     <div>

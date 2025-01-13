@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react'
+
 import { Card, CardContent } from "@/components/ui/card"
+import Image from 'next/image';
 import {
   Carousel,
   CarouselContent,
@@ -21,7 +22,7 @@ export default function Allprojects() {
 
    
 
-     const [works, setWork] = useState<Projects[]>([
+     const works : Projects[] = [
         {
             imgUrl: "/Baranggaymanagement.png",
             title: 'Baranggay information management system',
@@ -47,7 +48,7 @@ export default function Allprojects() {
             title: 'ICS SCHEDULING SYSTEM',
             link: 'https://github.com/Johnravee/ICS_SCHEDULING_SYSTEM'
         },
-     ])
+     ]
      
  
 
@@ -68,7 +69,7 @@ export default function Allprojects() {
                 <Card>
                   <CardContent className="flex justify-center flex-col p-0">
                     <Link href={val.link}>
-                        <img 
+                        <Image 
                         src={val.imgUrl} 
                         alt={`Project Image ${val.title}`} 
                         className="w-full h-full object-contain" 

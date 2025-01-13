@@ -42,7 +42,7 @@ export default function Works() {
 
     }
 
-    const [projects, setProject] = useState<Projects[]>([
+    const projects :Projects[] =[
         {
             title: "INSTITUTE OF COMPUTER STUDIES SCHEDULING SYSTEM",
             role: "Lead Developer",
@@ -63,7 +63,7 @@ export default function Works() {
                 githubUrl: ''
             }
         }
-    ])
+    ];
 
 
        useEffect(() => {
@@ -101,6 +101,7 @@ export default function Works() {
                         <DrawerContent className='h-[500px]'>
                             <DrawerHeader className='flex items-center justify-between'>
                                 <DrawerTitle className='font-bold text-lg'>All of my works</DrawerTitle>
+                                <DrawerDescription></DrawerDescription>
                                 <DrawerClose asChild>
                                 <Button variant="outline">Close</Button>
                             </DrawerClose>

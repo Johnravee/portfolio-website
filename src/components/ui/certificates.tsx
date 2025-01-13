@@ -1,6 +1,4 @@
 'use client'
-
-import React, { useState } from 'react'
 import { GiAchievement } from "react-icons/gi";
 import Link from 'next/link';
 import { FaArrowRight } from "react-icons/fa6";
@@ -14,7 +12,7 @@ export default function Certificates() {
         url: string
     }
 
-    const [cert, setCert] = useState<Certificate[]>([
+    const cert : Certificate[] = [
         {
             title: 'PMP certification',
             provider: 'SkillUp',
@@ -32,7 +30,7 @@ export default function Certificates() {
             provider: 'SkillUp',
             url: "https://simpli-web.app.link/e/9kMvqeXd7Pb"
         }
-    ]);
+    ];
 
 
   return (
