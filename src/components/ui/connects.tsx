@@ -60,7 +60,7 @@ export default function Connects() {
             <h1 className='font-semibold text-lg font-geist'>Connects</h1>
         </div>
 
-        <div className="description flex justify-center items-center pb-5 pl-5 pr-5 tracking-normal">
+        <div className="description flex justify-center items-center pb-1 pl-5 pr-5 tracking-normal">
             <p className='text-sm font-semibold'>
                 Feel free to send me an 
                 <Link href="mailto:johnravemimayn@gmail.com" className='underline-offset-2 underline ml-1 text-blue-500' target='_blank'>Email</Link> or send a message through my 

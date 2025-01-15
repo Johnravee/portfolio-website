@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-auto w-full  px-4">
+    <div className="flex flex-col items-center justify-center h-auto w-full  px-4 mb-3">
       <div className="light h-16 w-full max-w-screen-lg flex justify-end items-center mb-2">
         <ModeToggle />
       </div>
@@ -34,9 +34,9 @@ export default function Home() {
           </div>
           <div className="flex w-20 h-full justify-center items-center flex-col gap-5">
             <Link href="https://github.com/Johnravee" target="_blank" className="hover:text-gray-400"><FaGithub size={18} /></Link>
-            <Link href="https://www.linkedin.com/in/john-rave-mimay-740a06237/" className="hover:text-gray-400"><FaLinkedin size={18} /></Link>
-            <Link href="https://www.facebook.com/johnraveee/" className="hover:text-gray-400"><FaFacebook size={18} /></Link>
-            <Link href="https://medium.com/@johnravemimayn" className="hover:text-gray-400"><FaMedium size={18} /></Link>
+            <Link href="https://www.linkedin.com/in/john-rave-mimay-740a06237/" target="_blank" className="hover:text-gray-400"><FaLinkedin size={18} /></Link>
+            <Link href="https://www.facebook.com/johnraveee/" target="_blank" className="hover:text-gray-400"><FaFacebook size={18} /></Link>
+            <Link href="https://medium.com/@johnravemimayn" target="_blank" className="hover:text-gray-400"><FaMedium size={18} /></Link>
           </div>
         </div>
 
