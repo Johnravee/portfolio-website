@@ -25,7 +25,7 @@ export default function TechStacks() {
             <ul className="list-none flex-wrap flex justify-start items-start flex-row gap-1 ">
                 {stacks.title.map((val, index) =>{
                     return(
-                        <li key={index}><Badge variant={'secondary'}>{val}</Badge></li>
+                        <li key={index}><Badge variant={'default'} >{val}</Badge></li>
                     )
                 })}
             </ul>

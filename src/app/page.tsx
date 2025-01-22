@@ -22,17 +22,17 @@ export default function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-4 w-full max-w-screen-lg">
         
         {/* Avatar Section */}
-       <div className="col-span-1 sm:col-span-2 lg:col-span-2 row-span-4 w-full h-40 rounded-lg bg-white dark:bg-[#1111] border flex justify-end items-end overflow-hidden">
-          <div className="h-full w-56">
+       <div className="col-span-1 sm:col-span-2 lg:col-span-2 md:col-span-1 row-span-4 w-full h-40 rounded-lg bg-white dark:bg-[#1111]  flex justify-start items-center overflow-hidden border ">
+          <div className="h-full max-w-sm">
             <Image
-              src="/me.jpg"
+              src="/profile.png"
               className="w-full h-full object-cover"
               alt="Avatar"
               width={500}
               height={500}
             />
           </div>
-          <div className="flex w-20 h-full justify-center items-center flex-col gap-5">
+          <div className="flex w-40  h-full justify-center items-center lg:flex-col lg:gap-5 lg:w-20 lg:ml-5 flex-row gap-5">
             <Link href="https://github.com/Johnravee" target="_blank" className="hover:text-gray-400"><FaGithub size={18} /></Link>
             <Link href="https://www.linkedin.com/in/john-rave-mimay-740a06237/" target="_blank" className="hover:text-gray-400"><FaLinkedin size={18} /></Link>
             <Link href="https://www.facebook.com/johnraveee/" target="_blank" className="hover:text-gray-400"><FaFacebook size={18} /></Link>
@@ -62,7 +62,7 @@ export default function Home() {
         </div>
 
         {/* Works Section */}
-        <div className="col-span-1 sm:col-span-2 lg:col-span-5 row-span-5 h-48 bg-white border rounded-lg dark:bg-[#1111]">
+        <div className="col-span-1 sm:col-span-2 lg:col-span-5 row-span-5 h-auto   bg-white border rounded-lg dark:bg-[#1111]">
           <Works />
         </div>
       </div>
